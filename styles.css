@@ -228,12 +228,28 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
+.service-card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+.service-card:hover .feature-icon {
+  background: var(--primary-blue);
+  color: #FFFFFF;
+}
 .service-card i {
     font-size: 3rem;
     color: #10b981;
     margin-bottom: 20px;
 }
 
+.service-card:hover .service-icon {
+  background: var(--primary-blue);
+  color: #FFFFFF;
+}
 /* About */
 .about-grid {
     display: grid;
